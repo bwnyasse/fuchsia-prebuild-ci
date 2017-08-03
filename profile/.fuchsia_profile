@@ -1,0 +1,8 @@
+export FUCHSIA_DIR=~/fuchsia
+export PATH=$FUCHSIA_DIR/.jiri_root/bin:$PATH
+export CCACHE_DIR=~/.fuchsia_build_cached
+function fuchsia() {
+  source $FUCHSIA_DIR/scripts/env.sh && envprompt && fgo && fset x86-64 "$@"
+}
+
+
