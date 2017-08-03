@@ -1,1 +1,1 @@
-# fushia-prebuild-ci
+# fuchsia-prebuild-ci
